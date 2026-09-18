@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: "%s | Peter Doyle",
   },
   description:
-    "Peter Doyle is a senior data and analytics professional focused on SQL, data engineering, business intelligence, decision systems, and applied AI.",
+    "Peter Doyle turns ambiguous business problems, complex data, and emerging technology into measurable decision systems using analytics, data engineering, BI, and applied AI.",
   keywords: [
     "Peter Doyle",
     "data analytics",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     url: "https://thepeterdoyle.com",
     title: "Peter Doyle | Data & AI Decision Systems",
     description:
-      "Turning complex data, ambiguous business questions, and emerging technology into systems that help people make better decisions.",
+      "Start with the decision. Peter Doyle turns complex data and emerging technology into measurable systems for better business decisions.",
     siteName: "Peter Doyle",
   },
   twitter: {
