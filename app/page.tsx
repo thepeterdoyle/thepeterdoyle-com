@@ -71,7 +71,12 @@ export default function Home() {
           <a href="#approach">Approach</a>
           <a href="#work">Work</a>
           <a href="#speaking">Speaking</a>
-          <a className="nav-cta" href="mailto:info@thepeterdoyle.com">
+          <a
+            className="nav-cta"
+            href="https://www.linkedin.com/in/thepeterdoyle"
+            target="_blank"
+            rel="noreferrer"
+          >
             Contact
           </a>
         </nav>
@@ -215,9 +220,11 @@ export default function Home() {
           </p>
           <a
             className="text-link"
-            href="mailto:info@thepeterdoyle.com?subject=Speaking%20with%20Peter%20Doyle"
+            href="https://www.linkedin.com/in/thepeterdoyle"
+            target="_blank"
+            rel="noreferrer"
           >
-            Ask about speaking →
+            Connect on LinkedIn →
           </a>
         </div>
 
@@ -254,20 +261,19 @@ export default function Home() {
         <h2>Have a difficult question hiding inside your data?</h2>
         <p>Those are usually the interesting ones.</p>
         <div className="contact-links">
-          <a href="mailto:info@thepeterdoyle.com">info@thepeterdoyle.com</a>
           <a
             href="https://www.linkedin.com/in/thepeterdoyle"
             target="_blank"
             rel="noreferrer"
           >
-            LinkedIn
+            Connect on LinkedIn →
           </a>
           <a
             href="https://github.com/thepeterdoyle"
             target="_blank"
             rel="noreferrer"
           >
-            GitHub
+            View GitHub
           </a>
         </div>
       </section>
