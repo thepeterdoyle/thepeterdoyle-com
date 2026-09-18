@@ -51,7 +51,7 @@ export default function RootLayout({
     "@type": "Person",
     name: "Peter Doyle",
     url: "https://thepeterdoyle.com",
-    email: "mailto:peter@thepeterdoyle.com",
+    email: "mailto:info@thepeterdoyle.com",
     jobTitle: "Senior Data & Analytics Professional",
     homeLocation: {
       "@type": "Place",
