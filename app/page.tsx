@@ -1,3 +1,9 @@
+const HEADSHOT_URL =
+  "https://raw.githubusercontent.com/thepeterdoyle/thepeterdoyle-com/main/peter-doyle-headshot.jpg";
+
+const SPEAKING_URL =
+  "https://raw.githubusercontent.com/thepeterdoyle/thepeterdoyle-com/main/peter-doyle-speaking.JPEG";
+
 const proof = [
   { value: "10+", label: "Years in data & analytics" },
   { value: "$250K+", label: "Documented annual business impact" },
@@ -94,16 +100,31 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero-visual" aria-label="Peter Doyle brand statement">
-          <div className="signal-line" />
+        <div className="hero-visual" aria-label="Peter Doyle portrait and brand statement">
+          <img
+            className="hero-portrait"
+            src={HEADSHOT_URL}
+            alt="Peter Doyle"
+            fetchPriority="high"
+            decoding="async"
+          />
+          <div className="hero-image-shade" aria-hidden="true" />
+          <div className="signal-line" aria-hidden="true" />
           <div className="visual-index">PD / 01</div>
+
+          <div className="hero-identity">
+            <strong>PETER DOYLE</strong>
+            <span>ATLANTA · USA</span>
+          </div>
+
           <div className="visual-stack">
             <span>QUESTION</span>
             <span>EVIDENCE</span>
             <span>DECISION</span>
             <strong>IMPACT</strong>
           </div>
-          <p>
+
+          <p className="hero-visual-note">
             The technology changes.
             <br />
             The thinking doesn&apos;t.
@@ -199,12 +220,20 @@ export default function Home() {
             Ask about speaking →
           </a>
         </div>
-        <div className="speaking-visual">
-          <div className="photo-frame">
-            <span>Speaking photograph</span>
-            <small>We&apos;ll replace this panel with your strongest stage photo.</small>
-          </div>
-        </div>
+
+        <figure className="photo-frame">
+          <img
+            className="speaking-photo"
+            src={SPEAKING_URL}
+            alt="Peter Doyle presenting SQL to an audience"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            <span>SQL · SPEAKING &amp; TEACHING</span>
+            <small>Conference and community presentations across 10 states.</small>
+          </figcaption>
+        </figure>
       </section>
 
       <section className="section future">
@@ -223,9 +252,7 @@ export default function Home() {
       <section className="contact section">
         <p className="section-kicker">LET&apos;S TALK</p>
         <h2>Have a difficult question hiding inside your data?</h2>
-        <p>
-          Those are usually the interesting ones.
-        </p>
+        <p>Those are usually the interesting ones.</p>
         <div className="contact-links">
           <a href="mailto:peter@thepeterdoyle.com">peter@thepeterdoyle.com</a>
           <a
